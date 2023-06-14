@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/fonts/Poppins-Regular.ttf');
+}
+
+html,
+body {
+	@apply h-full;
+}
+
+body {
+	font-family: 'Poppins';
+	background-image: radial-gradient(at 0% 0%, rgba(165, 243, 252, 0.3) 0px, transparent 50%),
+		radial-gradient(at 98% 1%, rgba(106, 158, 241, 0.3) 0px, transparent 50%);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
