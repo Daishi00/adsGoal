@@ -6,9 +6,9 @@
 	import Card from '$lib/components/Card/Card.svelte';
 </script>
 
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-y-0">
-	<div class="flex justify-center place-items-start order-2 lg:order-1">
-		<img src={man} alt="Person in suit" class="rounded-full h-5/6" />
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-y-12">
+	<div class="flex justify-center place-items-start order-2 lg:order-1 h-full">
+		<img src={man} alt="Person in suit" class="rounded-full h-[500px]" />
 	</div>
 	<div class="flex flex-col gap-12 place-items-center order-1 lg:order-2">
 		<h2 class="text-5xl font-bold text-center">Kim jestem?</h2>

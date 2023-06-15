@@ -2,6 +2,7 @@
 	import Button from '../Button.svelte';
 	import PriceItem from './PriceItem.svelte';
 	import { prices } from './constants';
+	import { blur } from 'svelte/transition';
 </script>
 
 <ul class="grid grid-cols-1 xl:grid-cols-3 place-items-center gap-4">

@@ -5,8 +5,8 @@
 </script>
 
 <form name="contact" method="POST" data-netlify="true" class="container max-w-lg">
-	<Input label="Imię" name="name" />
-	<Input label="Email" name="email" />
+	<Input type="text" label="Imię" name="name" />
+	<Input type="email" label="Email" name="email" />
 	<div>
 		<TextArea label="Wiadomość" name="message" />
 	</div>
