@@ -1,5 +1,5 @@
 <script>
-	import Nav from './Nav.svelte';
+	import Nav from './Nav/Nav.svelte';
 	import IoMdMenu from 'svelte-icons/io/IoMdMenu.svelte';
 	import FaBolt from 'svelte-icons/fa/FaBolt.svelte';
 </script>

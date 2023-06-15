@@ -44,13 +44,15 @@
 	<div class="flex flex-col place-items-center gap-12 order-5 lg:order-6 lg:mt-24">
 		<h2 class="text-5xl font-bold text-center">Co dla Ciebie zrobię?</h2>
 		<Card icon="chart">
-			W pracy z systemem Google Ads zapewniam kompleksową obsługę klienta. Zadbam o każdy element
-			współpracy (od stworzenia konta Ads poprzez odpowiednie tagowanie z pomocą GTM, stworzenie i
-			skonfigurowanie GA4 aż do przejrzystego raportowania wyników kampanii). Jeśli Twoim problemem
-			jest to, że pojedyncza złotówka wydawana na budżet przynosi zbyt mało złotówek zwrotu, to z
-			dużą dozą prawdopodobieństwa będę w stanie Tobie pomóc w zwiększeniu obrotów i/lub ROAS. Z
-			kolei, jeśli Twój biznes to niestandardowy projekt wymagający myślenia ‘poza schematem’, to
-			również będę w stanie opracować odpowiednią strategię, by osiągnąć założone cele współpracy.
+			W pracy z systemem <span class="font-bold text-blue-600">Google Ads</span> zapewniam
+			kompleksową obsługę klienta. Zadbam o każdy element współpracy (od stworzenia konta Ads
+			poprzez odpowiednie tagowanie z pomocą <span class="font-bold text-blue-600">GTM</span>,
+			stworzenie i skonfigurowanie <span class="font-bold text-blue-600">GA4</span> aż do przejrzystego
+			raportowania wyników kampanii). Jeśli Twoim problemem jest to, że pojedyncza złotówka wydawana
+			na budżet przynosi zbyt mało złotówek zwrotu, to z dużą dozą prawdopodobieństwa będę w stanie Tobie
+			pomóc w zwiększeniu obrotów i/lub ROAS. Z kolei, jeśli Twój biznes to niestandardowy projekt wymagający
+			myślenia ‘poza schematem’, to również będę w stanie opracować odpowiednią strategię, by osiągnąć
+			założone cele współpracy.
 		</Card>
 	</div>
 </div>

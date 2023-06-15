@@ -128,10 +128,3 @@
 		fill="#f2f2f2"
 	/></svg
 >
-
-<style>
-	svg {
-		width: 90%;
-		height: 90%;
-	}
-</style>

@@ -221,10 +221,3 @@
 		fill="#ccc"
 	/></svg
 >
-
-<style>
-	svg {
-		width: 90%;
-		height: 90%;
-	}
-</style>

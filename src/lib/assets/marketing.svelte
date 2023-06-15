@@ -115,10 +115,3 @@
 		fill="#3f3d56"
 	/></svg
 >
-
-<style>
-	svg {
-		width: 90%;
-		height: 90%;
-	}
-</style>
