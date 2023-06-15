@@ -6,6 +6,6 @@
 <p>
 	<label class="text-gray-600"
 		>{label} <br />
-		<input type="text" class="w-full h-8 border-gray-200 border-2 rounded-sm my-2" {name} /></label
+		<input type="text" class="w-full h-8 border-blue-200 border-2 rounded-sm my-2" {name} /></label
 	>
 </p>

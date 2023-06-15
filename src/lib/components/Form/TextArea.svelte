@@ -8,8 +8,7 @@
 		>{label} <br />
 		<textarea
 			{name}
-			class="w-full border-gray-200 border-2 rounded-sm my-2 max-h-64"
-			rows="4"
+			class="w-full border-blue-200 border-2 rounded-sm my-2 h-52 resize-none"
 		/></label
 	>
 </p>

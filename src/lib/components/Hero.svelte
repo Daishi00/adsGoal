@@ -1,5 +1,5 @@
 <script>
-	import Laptop from '$lib/images/laptop.svelte';
+	import Laptop from '$lib/assets/laptop.svelte';
 </script>
 
 <div class="grid grid-cols-1 w-full">
