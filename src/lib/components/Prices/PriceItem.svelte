@@ -19,10 +19,12 @@
 			</div>
 		{/if}
 	</div>
-	<h3 class="text-4xl">
+	<h3 class="text-3xl">
 		{cost}
 		{#if id < 4}
-			<span class="text-lg text-gray-500">/ miesięcznie</span>
+			<span class="text-lg text-gray-500">/ brutto miesięcznie</span>
+		{:else}
+			<span class="text-lg text-gray-500"> brutto</span>
 		{/if}
 	</h3>
 	<h3 class="text-gray-500 text-lg">{budget}</h3>

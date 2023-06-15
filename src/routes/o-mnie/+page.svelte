@@ -8,7 +8,7 @@
 
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-12">
 	<div class="flex justify-center place-items-start order-2 lg:order-1 h-full">
-		<img src={man} alt="Person in suit" class="rounded-full h-[500px]" />
+		<img src={man} alt="Person in suit" class="rounded-full h-[300px] md:h-[500px]" />
 	</div>
 	<div class="flex flex-col gap-12 place-items-center order-1 lg:order-2">
 		<h2 class="text-5xl font-bold text-center">Kim jestem?</h2>
@@ -21,7 +21,7 @@
 		>
 	</div>
 	<div class="flex flex-col place-items-center gap-12 order-3">
-		<h2 class="text-5xl font-bold text-center">Moje doświadczenie</h2>
+		<h2 class="text-5xl font-bold text-center leading-snug">Moje doświadczenie</h2>
 		<Card icon="handshake">
 			Myślę, że łatwiej byłoby wskazać branże, z którymi nie miałem do czynienia niż wymienić te, z
 			którymi współpracowałem pod kątem kampanii <span class="font-bold text-blue-600"
@@ -42,7 +42,7 @@
 		<Marketing />
 	</div>
 	<div class="flex flex-col place-items-center gap-12 order-5 lg:order-6 lg:mt-24">
-		<h2 class="text-5xl font-bold text-center">Co dla Ciebie zrobię?</h2>
+		<h2 class="text-5xl font-bold text-center leading-snug">Co dla Ciebie zrobię?</h2>
 		<Card icon="chart">
 			W pracy z systemem <span class="font-bold text-blue-600">Google Ads</span> zapewniam
 			kompleksową obsługę klienta. Zadbam o każdy element współpracy (od stworzenia konta Ads

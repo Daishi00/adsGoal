@@ -8,7 +8,7 @@
 </script>
 
 <div class="grid grid-cols-1 gap-12 md:gap-16">
-	<h1 class="text-center text-2xl md:text-4xl lg:text-5xl font-bold">
+	<h1 class="text-center text-2xl md:text-4xl lg:text-5xl font-bold leading-relaxed">
 		Dynamiczna oferta cenowa <br />w zależności od twoich potrzeb.
 	</h1>
 	<h2 class="text-center text-xl md:text-3xl lg:text-4xl font-bold text-gray-700">
