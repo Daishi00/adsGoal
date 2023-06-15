@@ -19,7 +19,7 @@
 			</div>
 		{/if}
 	</div>
-	<h3 class="text-gray-950 text-4xl">
+	<h3 class="text-4xl">
 		{cost}
 		{#if id < 4}
 			<span class="text-lg text-gray-500">/ miesięcznie</span>

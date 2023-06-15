@@ -4,7 +4,7 @@
 	import TextArea from './TextArea.svelte';
 </script>
 
-<form name="contact" data-netlify="true" class="container max-w-lg">
+<form name="contact" method="POST" data-netlify="true" class="container max-w-lg">
 	<Input label="Imię" name="name" />
 	<Input label="Email" name="email" />
 	<div>
