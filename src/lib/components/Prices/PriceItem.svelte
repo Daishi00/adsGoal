@@ -8,14 +8,14 @@
 </script>
 
 <div
-	class="border-gray-300 border rounded-md p-6 max-w-lg flex flex-col gap-4 xl:h-[350px] relative"
+	class="border-gray-300 border rounded-md p-6 max-w-xl xl:max-w-md flex flex-col gap-4 relative lg:h-[360px]"
 >
-	<div class="flex justify-between text-gray-600">
+	<div class="flex justify-between text-gray-600 text-sm">
 		<h5>{type}</h5>
 		{#if variant === 'highlight'}
-			<div class="flex gap-2">
+			<div class="flex gap-1">
 				<h5>Najczęściej wybierany</h5>
-				<div class="w-6 text-blue-600"><MdStars /></div>
+				<div class="w-5 text-blue-600"><MdStars /></div>
 			</div>
 		{/if}
 	</div>
