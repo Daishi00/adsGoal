@@ -14,7 +14,7 @@
 		<p>{type}</p>
 		{#if variant === 'highlight'}
 			<div class="flex gap-1">
-				<h5>Najczęściej wybierany</h5>
+				<p>Najczęściej wybierany</p>
 				<div class="w-5 text-blue-600"><MdStars /></div>
 			</div>
 		{/if}
