@@ -9,12 +9,12 @@
 </script>
 
 <header
-	class="w-full bg-gray-100 h-14 flex pl-4 md:p-0 justify-between md:justify-around items-center flex-shrink-0 shadow-md fixed z-50"
+	class="w-full bg-gray-100 0 h-14 flex pl-4 shadow-sm shadow-blue-200 md:p-0 justify-between md:justify-around items-center flex-shrink-0 fixed z-50"
 >
 	<div class="flex justify-center">
 		<a href="/" class="text-3xl font-bold flex z-50">
-			Ads<span class="text-blue-600">Performance</span>
-			<div class="w-5 text-blue-600 ml-1"><FaBolt /></div></a
+			Ads<span class="text-blue-700">Performance</span>
+			<div class="w-5 text-blue-700 ml-1"><FaBolt /></div></a
 		>
 	</div>
 	<Nav {open} {onClick} />
