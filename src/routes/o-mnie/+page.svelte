@@ -2,9 +2,16 @@
 	import man from '$lib/assets/man.png';
 	import Experience from '$lib/assets/experience.svelte';
 	import Marketing from '$lib/assets/marketing.svelte';
-
 	import Card from '$lib/components/Card/Card.svelte';
 </script>
+
+<svelte:head>
+	<title>O mnie</title>
+	<meta
+		name="Myślę, że łatwiej byłoby wskazać branże, z którymi nie miałem do czynienia niż wymienić te, z
+			którymi współpracowałem pod kątem kampani Google Ads"
+	/>
+</svelte:head>
 
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-12">
 	<div class="flex justify-center place-items-start order-2 lg:order-1 h-full">

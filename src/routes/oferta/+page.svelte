@@ -7,6 +7,13 @@
 	import Analysis from '$lib/assets/analysis.svelte';
 </script>
 
+<svelte:head>
+	<title>Oferta</title>
+	<meta
+		name="Dynamiczna oferta cenowa w zależności od twoich potrzeb. Google Ads pakiety, Wdrożenie Analityki (GA4), Audyt kampanii Google Ads"
+	/>
+</svelte:head>
+
 <div class="grid grid-cols-1 gap-12 md:gap-16">
 	<h1 class="text-center text-2xl md:text-4xl lg:text-5xl font-bold leading-relaxed">
 		Dynamiczna oferta cenowa <br />w zależności od twoich potrzeb.

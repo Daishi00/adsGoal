@@ -3,6 +3,11 @@
 	import Contact from '$lib/assets/contact.svelte';
 </script>
 
+<svelte:head>
+	<title>Bezpłatna konsultacja</title>
+	<meta name="Nie mogę się doczekać współpracy z Tobą! Skorzystaj z formularza." />
+</svelte:head>
+
 <div class="grid gap-16 lg:grid-cols-2">
 	<div class="flex flex-col justify-center place-items-center gap-4">
 		<h2 class="text-4xl text-center font-bold max-w-lg">
