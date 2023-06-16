@@ -4,6 +4,8 @@
 	import { prices } from '$lib/components/Prices/constants';
 	import PriceItem from '$lib/components/Prices/PriceItem.svelte';
 	import Analysis from '$lib/assets/analysis.svelte';
+
+	export let data;
 </script>
 
 <svelte:head>
@@ -21,7 +23,9 @@
 	<h2 class="text-center text-xl md:text-3xl lg:text-4xl font-bold text-gray-700">
 		Google Ads pakiety:
 	</h2>
-	<PriceList />
+	{#if data.posts}
+		<PriceList offerArr={data.posts} />
+	{/if}
 	<h2 class="text-center text-xl md:text-3xl lg:text-4xl font-bold text-gray-700">
 		Wdrożenie Analityki (GA4):
 	</h2>

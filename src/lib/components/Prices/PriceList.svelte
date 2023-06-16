@@ -2,13 +2,16 @@
 	import Button from '../Button.svelte';
 	import PriceItem from './PriceItem.svelte';
 	import { prices } from './constants';
+	import type { Offer } from '../../../routes/oferta/+page.server';
+
+	export let offerArr: Offer[];
 </script>
 
 <ul class="grid grid-cols-1 xl:grid-cols-3 place-items-center gap-4">
-	{#each prices as price (price.id)}
-		{#if price.id < 4}
+	{#each offerArr as item (item.offer.id)}
+		{#if item.offer.id < 4}
 			<li>
-				<PriceItem props={price} />
+				<PriceItem props={item.offer} />
 			</li>
 		{/if}{/each}
 	<li
