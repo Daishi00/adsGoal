@@ -8,7 +8,8 @@
 <svelte:head>
 	<title>O mnie</title>
 	<meta
-		name="Myślę, że łatwiej byłoby wskazać branże, z którymi nie miałem do czynienia niż wymienić te, z
+		name="description"
+		content="Myślę, że łatwiej byłoby wskazać branże, z którymi nie miałem do czynienia niż wymienić te, z
 			którymi współpracowałem pod kątem kampani Google Ads"
 	/>
 </svelte:head>

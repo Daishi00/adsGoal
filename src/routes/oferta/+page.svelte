@@ -9,7 +9,8 @@
 <svelte:head>
 	<title>Oferta</title>
 	<meta
-		name="Dynamiczna oferta cenowa w zależności od twoich potrzeb. Google Ads pakiety, Wdrożenie Analityki (GA4), Audyt kampanii Google Ads"
+		name="description"
+		content="Dynamiczna oferta cenowa w zależności od twoich potrzeb. Google Ads pakiety, Wdrożenie Analityki (GA4), Audyt kampanii Google Ads"
 	/>
 </svelte:head>
 

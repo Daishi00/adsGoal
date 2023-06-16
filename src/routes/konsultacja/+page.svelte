@@ -5,7 +5,10 @@
 
 <svelte:head>
 	<title>Bezpłatna konsultacja</title>
-	<meta name="Nie mogę się doczekać współpracy z Tobą! Skorzystaj z formularza." />
+	<meta
+		name="description"
+		content="Nie mogę się doczekać współpracy z Tobą! Skorzystaj z formularza."
+	/>
 </svelte:head>
 
 <div class="grid gap-16 lg:grid-cols-2">
