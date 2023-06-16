@@ -7,7 +7,7 @@
 	<title>Bezpłatna konsultacja</title>
 	<meta
 		name="description"
-		content="Nie mogę się doczekać współpracy z Tobą! Skorzystaj z formularza."
+		content="Nie mogę się doczekać współpracy z Tobą! Skorzystaj z formularza"
 	/>
 </svelte:head>
 
