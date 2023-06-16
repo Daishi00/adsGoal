@@ -1,7 +1,3 @@
-<script>
-	import Hero from '$lib/components/Hero.svelte';
-</script>
-
 <svelte:head>
 	<title>Dlaczego Google Ads?</title>
 	<meta

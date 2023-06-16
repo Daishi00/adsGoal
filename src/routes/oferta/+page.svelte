@@ -1,7 +1,6 @@
 <script>
 	import PriceList from '$lib/components/Prices/PriceList.svelte';
 	import Analytics from '$lib/assets/analytics.svelte';
-	import Button from '$lib/components/Button.svelte';
 	import { prices } from '$lib/components/Prices/constants';
 	import PriceItem from '$lib/components/Prices/PriceItem.svelte';
 	import Analysis from '$lib/assets/analysis.svelte';
