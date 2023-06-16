@@ -13,7 +13,7 @@ export const prices: Price[] = [
 		type: 'Standard',
 		cost: '1800 zł',
 		budget: '*budżet do 12 000 zł / miesięcznie',
-		text: 'Pakiet dla rozwiniętych firm, które oczekują komleksowej obsługi na wysokim poziomie przy wyższym budżecie reklamowym.',
+		text: 'Pakiet dla rozwiniętych firm, które oczekują kompleksowej obsługi na wysokim poziomie przy wyższym budżecie reklamowym.',
 		variant: 'highlight'
 	},
 	{
