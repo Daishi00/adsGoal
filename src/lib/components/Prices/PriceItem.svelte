@@ -11,7 +11,7 @@
 	class="border-blue-200 border rounded-md p-6 max-w-xl xl:max-w-md flex flex-col gap-4 relative lg:h-[360px]"
 >
 	<div class="flex justify-between text-gray-600 text-sm">
-		<h5>{type}</h5>
+		<p>{type}</p>
 		{#if variant === 'highlight'}
 			<div class="flex gap-1">
 				<h5>Najczęściej wybierany</h5>
