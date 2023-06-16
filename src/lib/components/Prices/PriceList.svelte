@@ -16,8 +16,5 @@
 	>
 		<p class="text-gray-600 text-sm">Pakiet indywidulany</p>
 		<p>Rozliczenia fee zależne od obrotu etc.</p>
-		<a href="/konsultacja">
-			<Button>Skontaktuj się</Button>
-		</a>
 	</li>
 </ul>

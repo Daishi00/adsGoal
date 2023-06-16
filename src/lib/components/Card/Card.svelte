@@ -2,7 +2,7 @@
 	import FaUserTie from 'svelte-icons/fa/FaUserTie.svelte';
 	import FaHandshake from 'svelte-icons/fa/FaHandshake.svelte';
 	import FaChartBar from 'svelte-icons/fa/FaChartBar.svelte';
-	export let icon: 'user' | 'handshake' | 'chart';
+	export let icon: 'user' | 'handshake' | 'chart' | null = null;
 </script>
 
 <div
