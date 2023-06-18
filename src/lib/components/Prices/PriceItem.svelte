@@ -1,10 +1,11 @@
 <script lang="ts">
+	import type { Offer } from '../../../routes/oferta/+page.server';
 	import Button from '../Button.svelte';
-	import type { Price } from './types';
 	import MdStars from 'svelte-icons/md/MdStars.svelte';
 
-	export let props: Price;
-	$: ({ type, cost, budget, text, variant, id } = props);
+	export let props: Offer;
+	$: ({ type, cost, budget, text, id } = props.offer);
+	console.log(props);
 </script>
 
 <div
@@ -12,7 +13,7 @@
 >
 	<div class="flex justify-between text-gray-600 text-sm">
 		<p>{type}</p>
-		{#if variant === 'highlight'}
+		{#if type === 'Standard'}
 			<div class="flex gap-1">
 				<p>Najczęściej wybierany</p>
 				<div class="w-5 text-blue-600"><MdStars /></div>
@@ -27,11 +28,13 @@
 			<span class="text-lg text-gray-500"> brutto</span>
 		{/if}
 	</h3>
-	<h3 class="text-gray-500 text-lg">{budget}</h3>
+	{#if budget}
+		<h3 class="text-gray-500 text-lg">{budget}</h3>
+	{/if}
 	<p class="text-justify">
 		{text}
 	</p>
 	<a href="/konsultacja" class="mt-auto">
-		<Button {variant}>Skontaktuj się</Button>
+		<Button variant={type === 'Standard' ? 'highlight' : null}>Skontaktuj się</Button>
 	</a>
 </div>

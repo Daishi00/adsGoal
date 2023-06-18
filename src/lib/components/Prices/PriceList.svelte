@@ -11,7 +11,7 @@
 	{#each offerArr as item (item.offer.id)}
 		{#if item.offer.id < 4}
 			<li>
-				<PriceItem props={item.offer} />
+				<PriceItem props={item} />
 			</li>
 		{/if}{/each}
 	<li
