@@ -20,9 +20,11 @@
 </svelte:head>
 
 <div class="grid grid-cols-1 gap-12 md:gap-16">
-	<h1 class="text-center text-2xl md:text-4xl lg:text-5xl font-bold leading-relaxed">
-		{page.headermain}
-	</h1>
+	<div class="xl:w-[70%] m-auto">
+		<h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold">
+			{page.headermain}
+		</h1>
+	</div>
 	<h2 class="text-center text-xl md:text-3xl lg:text-4xl font-bold text-gray-700">
 		{page.header1}
 	</h2>

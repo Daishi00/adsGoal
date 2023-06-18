@@ -1,6 +1,5 @@
 <script>
 	import Advertise from '$lib/assets/advertise.svelte';
-	import Card from '$lib/components/Card/Card.svelte';
 	import Button from '$lib/components/Button.svelte';
 </script>
 

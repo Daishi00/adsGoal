@@ -24,7 +24,7 @@
 </nav>
 {#if open}
 	<nav
-		class="absolute md:hidden z-40 bg-gray-100 top-14 right-0 w-full pb-4"
+		class="absolute md:hidden z-40 bg-gray-100 top-14 right-0 w-full pb-4 border-b border-blue-200"
 		in:fly={{ y: -200 }}
 		out:fly={{ y: -200 }}
 	>

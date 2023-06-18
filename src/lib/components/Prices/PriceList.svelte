@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Button from '../Button.svelte';
 	import PriceItem from './PriceItem.svelte';
-	import { prices } from './constants';
 	import type { Offer } from '../../../routes/oferta/+page.server';
 
 	export let offerArr: Offer[];
