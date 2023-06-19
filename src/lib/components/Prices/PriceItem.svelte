@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="border-blue-200 border rounded-md p-6 max-w-xl xl:max-w-md flex flex-col gap-4 relative lg:h-[360px]"
+	class="border-blue-200 border rounded-md p-6 max-w-xl xl:max-w-full flex flex-col gap-4 h-full"
 >
 	<div class="flex justify-between text-gray-600 text-xs lg:text-sm">
 		<p>{type}</p>
@@ -20,14 +20,16 @@
 			</div>
 		{/if}
 	</div>
-	<h3 class="text-xl lg:text-3xl">
-		{cost}
-		{#if id < 4}
-			<span class="text-sm lg:text-lg text-gray-500">/ brutto miesięcznie</span>
-		{:else}
-			<span class="text-sm lg:text-lg text-gray-500"> brutto</span>
-		{/if}
-	</h3>
+	{#if cost}
+		<h3 class="text-xl lg:text-3xl">
+			{cost}
+			{#if id < 4}
+				<span class="text-sm lg:text-lg text-gray-500">/ brutto miesięcznie</span>
+			{:else if id > 5}
+				<span class="text-sm lg:text-lg text-gray-500"> brutto</span>
+			{/if}
+		</h3>
+	{/if}
 	{#if budget}
 		<h3 class="text-gray-500 text-sm lg:text-lg">{budget}</h3>
 	{/if}

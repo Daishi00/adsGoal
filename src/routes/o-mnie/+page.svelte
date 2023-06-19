@@ -1,8 +1,17 @@
-<script>
+<script lang="ts">
 	import man from '$lib/assets/man.png';
 	import Experience from '$lib/assets/experience.svelte';
 	import Marketing from '$lib/assets/marketing.svelte';
 	import Card from '$lib/components/Card/Card.svelte';
+	import { fade, fly } from 'svelte/transition';
+
+	let y: number = 0;
+	let minY: number = 0;
+
+	$: if (y > minY) {
+		minY = y;
+		console.log(minY);
+	}
 </script>
 
 <svelte:head>
@@ -14,12 +23,13 @@
 	/>
 </svelte:head>
 
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-y-12">
+<svelte:window bind:scrollY={y} />
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 	<div class="flex justify-center place-items-start order-2 lg:order-1 h-full">
-		<img src={man} alt="Person in suit" class="rounded-full h-[300px] md:h-[500px]" />
+		<img src={man} alt="Person in suit" class="rounded-full h-[300px] md:h-[400px] lg:h-[500px]" />
 	</div>
 	<div class="flex flex-col gap-12 place-items-center order-1 lg:order-2">
-		<h2 class="text-5xl font-bold text-center">Kim jestem?</h2>
+		<h2 class="text-3xl lg:text-5xl font-bold text-center">Kim jestem?</h2>
 		<Card icon="user">
 			W branży marketingu internetowego działam nieprzerwanie od 6 lat, od początku specjalizuję się
 			w <span class="font-bold text-blue-600">Google Ads</span>. Przez 5,5 roku pracowałem w 2
@@ -29,7 +39,7 @@
 		>
 	</div>
 	<div class="flex flex-col place-items-center gap-12 order-3">
-		<h2 class="text-5xl font-bold text-center leading-snug">Moje doświadczenie</h2>
+		<h2 class="text-3xl lg:text-5xl font-bold text-center leading-snug">Moje doświadczenie</h2>
 		<Card icon="handshake">
 			Myślę, że łatwiej byłoby wskazać branże, z którymi nie miałem do czynienia niż wymienić te, z
 			którymi współpracowałem pod kątem kampanii <span class="font-bold text-blue-600"
@@ -43,14 +53,22 @@
 			jasne relacje biznesowe, które są zorientowane na wynik.</Card
 		>
 	</div>
-	<div class="grid place-items-center order-4">
-		<Experience />
+	<div class="order-4 flex align-bottom justify-end">
+		{#if minY > 200}
+			<div class="w-3/4 mx-auto" in:fly={{ duration: 1000, x: 200 }}>
+				<Experience />
+			</div>
+		{/if}
 	</div>
-	<div class="grid place-items-center order-6 lg:order-5">
-		<Marketing />
+	<div class="order-6 lg:order-5 flex align-bottom justify-end">
+		{#if minY > 900}
+			<div class="w-3/4 mx-auto lg:mt-24 flex" in:fly={{ duration: 1000, x: -200 }}>
+				<Marketing />
+			</div>
+		{/if}
 	</div>
 	<div class="flex flex-col place-items-center gap-12 order-5 lg:order-6 lg:mt-24">
-		<h2 class="text-5xl font-bold text-center leading-snug">Co dla Ciebie zrobię?</h2>
+		<h2 class="text-3xl lg:text-5xl font-bold text-center leading-snug">Co dla Ciebie zrobię?</h2>
 		<Card icon="chart">
 			W pracy z systemem <span class="font-bold text-blue-600">Google Ads</span> zapewniam
 			kompleksową obsługę klienta. Zadbam o każdy element współpracy (od stworzenia konta Ads

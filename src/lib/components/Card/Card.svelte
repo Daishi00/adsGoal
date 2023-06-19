@@ -20,7 +20,7 @@
 		</div>
 	</div>
 	<div class="w-full h-[1px] bg-blue-200" />
-	<p class="text-justify">
+	<p class="text-sm lg:text-base text-justify">
 		<slot />
 	</p>
 </div>
