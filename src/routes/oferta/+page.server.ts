@@ -61,8 +61,6 @@ export async function load() {
 
 			const page = data.page.offerheaders;
 
-			console.log(posts);
-
 			return { posts, page };
 		} catch (err) {
 			throw error(500, {
