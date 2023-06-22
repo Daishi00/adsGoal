@@ -5,7 +5,6 @@
 
 	export let props: Offer;
 	$: ({ type, cost, budget, text, id } = props.offer);
-	console.log(props);
 </script>
 
 <div
@@ -33,7 +32,7 @@
 	{#if budget}
 		<h3 class="text-gray-500 text-sm lg:text-lg">{budget}</h3>
 	{/if}
-	<p class="text-justify text-sm lg:text-base">
+	<p class=" text-sm lg:text-base">
 		{text}
 	</p>
 	<a href="/konsultacja" class="mt-auto">

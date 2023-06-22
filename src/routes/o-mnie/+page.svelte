@@ -10,7 +10,6 @@
 
 	$: if (y > minY) {
 		minY = y;
-		console.log(minY);
 	}
 </script>
 
@@ -55,14 +54,14 @@
 	</div>
 	<div class="order-4 flex align-bottom justify-end">
 		{#if minY > 200}
-			<div class="w-3/4 mx-auto" in:fly={{ duration: 1000, x: 200 }}>
+			<div class="w-3/4 mx-auto" in:fly={{ duration: 1500, x: 400 }}>
 				<Experience />
 			</div>
 		{/if}
 	</div>
 	<div class="order-6 lg:order-5 flex align-bottom justify-end">
 		{#if minY > 900}
-			<div class="w-3/4 mx-auto lg:mt-24 flex" in:fly={{ duration: 1000, x: -200 }}>
+			<div class="w-3/4 mx-auto lg:mt-24 flex" in:fly={{ duration: 1500, x: -400 }}>
 				<Marketing />
 			</div>
 		{/if}

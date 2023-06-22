@@ -19,7 +19,7 @@
 		<h3 class="text-xl text-center text-gray-500">Skorzystaj z poniższego formularza.</h3>
 		<Form />
 	</div>
-	<div class="w-full grid place-items-center">
+	<div class="grid place-items-center w-3/4 mx-auto">
 		<Contact />
 	</div>
 </div>
