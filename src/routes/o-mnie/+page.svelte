@@ -23,7 +23,7 @@
 </svelte:head>
 
 <svelte:window bind:scrollY={y} />
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-screen container">
 	<div class="flex justify-center place-items-start order-2 lg:order-1 h-full">
 		<img src={man} alt="Person in suit" class="rounded-full h-[300px] md:h-[400px] lg:h-[500px]" />
 	</div>
@@ -61,7 +61,7 @@
 	</div>
 	<div class="order-6 lg:order-5 flex align-bottom justify-end">
 		{#if minY > 900}
-			<div class="w-3/4 mx-auto lg:mt-24 flex" in:fly={{ duration: 1500, x: -400 }}>
+			<div class="w-3/4 mx-auto lg:mt-24" in:fly={{ duration: 1500, x: -400 }}>
 				<Marketing />
 			</div>
 		{/if}

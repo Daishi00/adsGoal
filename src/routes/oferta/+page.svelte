@@ -25,7 +25,7 @@
 </svelte:head>
 <svelte:window bind:scrollY={y} />
 
-<div class="grid grid-cols-1 gap-12 md:gap-18">
+<div class="container grid grid-cols-1 gap-12 md:gap-18 mx-auto">
 	<div class="xl:w-[70%] m-auto">
 		<h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold">
 			{page.headermain}
@@ -47,7 +47,7 @@
 		<div class="lg:col-start-3 lg:col-end-3 order-1 lg:order-2">
 			{#if minY > 450}
 				<div in:blur={{ duration: 700 }}>
-					<PriceItem props={data.posts[4]} />
+					<PriceItem props={posts[4]} />
 				</div>
 			{/if}
 		</div>
@@ -62,7 +62,7 @@
 		<div class="lg:col-start-3 lg:col-end-3 order-1 lg:order-2">
 			{#if minY > 950}
 				<div in:blur={{ duration: 700 }}>
-					<PriceItem props={data.posts[5]} />
+					<PriceItem props={posts[5]} />
 				</div>
 			{/if}
 		</div>

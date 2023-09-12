@@ -24,7 +24,7 @@
 			{cost}
 			{#if id < 4}
 				<span class="text-sm lg:text-lg text-gray-500">/ brutto miesięcznie</span>
-			{:else if id > 5}
+			{:else if id > 4}
 				<span class="text-sm lg:text-lg text-gray-500"> brutto</span>
 			{/if}
 		</h3>

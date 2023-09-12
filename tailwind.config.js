@@ -8,6 +8,13 @@ export default {
 			fontFamily: {
 				inter: ['Space Grotesk', 'serif']
 			}
+		},
+		container: {
+			padding: {
+				DEFAULT: '1rem',
+				sm: '2rem',
+				lg: '5rem'
+			}
 		}
 	},
 	plugins: []
