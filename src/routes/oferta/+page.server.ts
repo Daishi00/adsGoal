@@ -30,7 +30,7 @@ export async function load() {
 					}
 				}
 			}
-			page(id: 28, idType: DATABASE_ID) {
+			page(id: 22, idType: DATABASE_ID) {
 				offerheaders {
 					headermain
 					header1
@@ -43,8 +43,9 @@ export async function load() {
 	const { rawPosts, rawPage } = await getData<Offer[], OfferHeaders>(WP_API_URL, query);
 
 	const posts = rawPosts.sort((a, b) => a.offer.id - b.offer.id);
-	const page = rawPage.offerheaders;
 
+	console.log(posts);
+	const page = rawPage.offerheaders;
 	return {
 		posts,
 		page
