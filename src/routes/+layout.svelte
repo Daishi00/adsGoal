@@ -11,7 +11,7 @@
 <div class="flex flex-col h-screen">
 	<Header />
 	<PageTransition key={data.url} duration={200}>
-		<div class="mt-24 lg:mt-32 mb-4">
+		<div class="mt-24 lg:mt-32">
 			<slot />
 		</div>
 	</PageTransition>

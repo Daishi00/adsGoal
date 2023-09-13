@@ -43,3 +43,24 @@ export const GET_ABOUTME = gql`
 		}
 	}
 `;
+
+export const GET_HOME = gql`
+	{
+		posts(where: { categoryName: "home" }) {
+			nodes {
+				home {
+					id
+					text
+					type
+				}
+			}
+		}
+		page(id: "115", idType: DATABASE_ID) {
+			homeheaders {
+				header1
+				header2
+				header3
+			}
+		}
+	}
+`;
