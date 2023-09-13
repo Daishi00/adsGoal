@@ -1,4 +1,3 @@
-import { WP_API_URL } from '$env/static/private';
 import { getData } from '../utils/api';
 import { GET_HOME } from '../utils/gqlqueries';
 
@@ -15,7 +14,7 @@ export interface HomeHeaders {
 }
 
 export async function load() {
-	const { rawPosts, rawPage } = await getData<Home[], HomeHeaders>(WP_API_URL, GET_HOME);
+	const { rawPosts, rawPage } = await getData<Home[], HomeHeaders>(GET_HOME);
 
 	const posts = rawPosts.sort((a, b) => a.home.id - b.home.id);
 

@@ -1,4 +1,3 @@
-import { WP_API_URL } from '$env/static/private';
 import { getData } from '../../utils/api';
 import { GET_OFFER } from '../../utils/gqlqueries';
 
@@ -16,7 +15,7 @@ export interface OfferHeaders {
 }
 
 export async function load() {
-	const { rawPosts, rawPage } = await getData<Offer[], OfferHeaders>(WP_API_URL, GET_OFFER);
+	const { rawPosts, rawPage } = await getData<Offer[], OfferHeaders>(GET_OFFER);
 
 	const posts = rawPosts.sort((a, b) => a.offer.id - b.offer.id);
 
