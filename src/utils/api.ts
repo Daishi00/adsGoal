@@ -19,7 +19,6 @@ export const getData = async <T, Y>(query: string): Promise<Data<T, Y>> => {
 		const requestHeaders = {
 			authorization: `Bearer ${WP_API_TOKEN}`
 		};
-
 		const data = await request<GqlData<T, Y>>(WP_API_URL, query, {}, requestHeaders);
 		const rawPosts = data.posts.nodes;
 		const rawPage = data.page;
