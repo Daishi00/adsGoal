@@ -43,14 +43,14 @@
 	</div>
 	<div class="order-4 flex align-bottom justify-end">
 		{#if minY > 200}
-			<div class="w-3/4 mx-auto" in:fly={{ duration: 1500, x: 400 }}>
+			<div class="w-3/4 mx-auto" in:fade={{ duration: 800 }}>
 				<Experience />
 			</div>
 		{/if}
 	</div>
 	<div class="order-6 lg:order-5 flex align-bottom justify-end">
 		{#if minY > 900}
-			<div class="w-3/4 mx-auto lg:mt-24" in:fly={{ duration: 1500, x: -400 }}>
+			<div class="w-3/4 mx-auto lg:mt-24" in:fade={{ duration: 800 }}>
 				<Marketing />
 			</div>
 		{/if}

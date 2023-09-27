@@ -18,7 +18,7 @@
 		{/if}
 	</div>
 	<h3 class="text-blue-700 font-bold text-2xl">{header}</h3>
-	<p class="">
+	<p>
 		<slot />
 	</p>
 </div>
