@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Nav from './Nav/Nav.svelte';
-	import FaBolt from 'svelte-icons/fa/FaBolt.svelte';
 	import Hamburger from '$lib/components/Hamburger.svelte';
 	export let open: boolean = false;
 	export let onClick = (): void => {
@@ -13,10 +12,9 @@
 >
 	<div class="flex justify-between md:justify-around items-center h-full w-full max-w-[1800px]">
 		<div class="flex justify-center">
-			<a href="/" class="text-xl lg:text-3xl font-bold flex z-50">
-				Ads<span class="text-blue-700">Performance</span>
-				<div class="w-4 lg:w-5 text-blue-700 ml-1"><FaBolt /></div></a
-			>
+			<a href="/" class="text-3xl lg:text-4xl font-bold flex z-50">
+				Ads<span class="text-blue-700">Goal</span>
+			</a>
 		</div>
 		<Nav {open} {onClick} />
 		<Hamburger {open} {onClick} />
