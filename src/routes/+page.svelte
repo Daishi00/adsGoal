@@ -15,7 +15,7 @@
 	<title>Wykorzystaj potencjał GoogleAds</title>
 	<meta
 		name="description"
-		content="Wykorzystaj potencjał GoogleAds. Rozwiń swój biznes i dotrzyj do większej liczby potencjalnych klientów"
+		content="Rozwiń swój biznes i dotrzyj do większej liczby potencjalnych klientów"
 	/>
 </svelte:head>
 
